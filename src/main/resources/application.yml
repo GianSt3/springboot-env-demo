@@ -1,0 +1,9 @@
+demo:
+  env-var: ${INTERNAL:empty}
+  title: '${demo.env-var} Default'
+  description: '${INTERNAL:empty} Default'
+---
+spring:
+  profiles: dev
+demo:
+  description: 'Inherit default'
